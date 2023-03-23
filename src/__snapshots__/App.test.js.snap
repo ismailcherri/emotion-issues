@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it breaks on HOC with children function call 1`] = `
+<div>
+  <Component />
+</div>
+`;
+
+exports[`it breaks on dive calls on styled component 1`] = `null`;
+
+exports[`it breaks on dive calls on styled component 2`] = `<Bar />`;
+
+exports[`it breaks on dive calls on styled component 3`] = `null`;
+
+exports[`it breaks on self enclosed styled components 1`] = `
+<div>
+  <Styled(div) />
+</div>
+`;
+
+exports[`it does not break on self enclosed styled components 1`] = `
+<div>
+  <Styled(div)>
+    Doesn't break here
+  </Styled(div)>
+</div>
+`;
